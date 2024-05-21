@@ -12,7 +12,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "click",
-        "opencv-python",
         "tk",
         "tqdm",
         "loguru",
@@ -28,5 +27,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.12",
+    python_requires=">=3.11",
 )
