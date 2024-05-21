@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="imagededup-cli",  # Package name
-    version="1.0.0",  # Initial version
+    version="1.0.3",  # Initial version
     author="Tadeas Fort",
     author_email="taddy.fort@gmail.com",
     description="A tool to remove duplicate jpg images",
