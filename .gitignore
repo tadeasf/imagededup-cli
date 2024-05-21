@@ -1,0 +1,11 @@
+.python-version
+*.log
+*.egg
+*.egg-info
+.dist
+build
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.vscode
