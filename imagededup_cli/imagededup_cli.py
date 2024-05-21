@@ -79,12 +79,8 @@ def main(threshold):
 
     input_dir = select_directory()
     if not input_dir:
-        click.echo("No directory selected. Exiting.")
         logger.info("No directory selected. Exiting.")
         return
-
-    click.echo(f"Selected directory: {input_dir}")
-    click.echo(f"Finding duplicates with threshold: {threshold}")
     logger.info(f"Selected directory: {input_dir}")
     logger.info(f"Finding duplicates with threshold: {threshold}")
 
@@ -93,17 +89,7 @@ def main(threshold):
     end_time = time()
     total_time = end_time - start_time
 
-    time_per_1000_images = (total_time / total_images) * 1000 if total_images else 0
-    time_per_1000_duplicates = (
-        (total_time / total_duplicates) * 1000 if total_duplicates else 0
-    )
-
     logger.info(f"Total runtime: {total_time:.2f} seconds")
-    logger.info(f"Seconds per 1000 input files: {time_per_1000_images:.2f}")
-    logger.info(f"Seconds per 1000 duplicates: {time_per_1000_duplicates:.2f}")
-
-    click.echo("Duplicate finding and moving completed.")
-    logger.info("Duplicate finding and moving completed.")
 
 
 if __name__ == "__main__":

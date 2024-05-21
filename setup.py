@@ -19,7 +19,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "imagededup-cli = imagededup-cli.imagededup-cli:main",
+            "imagededup-cli = imagededup_cli.imagededup_cli:main",
         ],
     },
     classifiers=[
@@ -27,5 +27,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.11",
+    python_requires=">=3.9",
 )
